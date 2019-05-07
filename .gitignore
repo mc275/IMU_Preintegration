@@ -1,0 +1,45 @@
+# Prerequisites
+*.d
+
+#IDE Project
+.kdev4/
+*.kdev4
+*.idea
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+build
+tmp
+*~
+cmake-build-debug
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+*.bak
+*.yaml
+*.log
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
