@@ -39,7 +39,9 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
 # 添加库 
 add_library(${PROJECT_NAME} SHARED
-src/so3.cpp
+        src/so3.cpp
+        src/IMU_Data.cpp
+        src/IMU_Preintegrator.cpp
 )
 
 # 链接库。 
@@ -55,8 +57,8 @@ ${LAPACK_LIBRARIES}
 
 # 编译单目KITTI数据集可执行文件
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
-#add_executable(main src/main.cpp)
-#target_link_libraries(mono_kitti ${PROJECT_NAME})
+add_executable(main src/main.cpp)
+target_link_libraries(main ${PROJECT_NAME})
 
 
 

@@ -6,6 +6,7 @@
 *.kdev4
 *.idea
 
+
 # Compiled Object files
 *.slo
 *.lo
@@ -15,6 +16,7 @@ build
 tmp
 *~
 cmake-build-debug
+bin
 
 # Precompiled Headers
 *.gch

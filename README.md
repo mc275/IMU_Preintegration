@@ -1,17 +1,20 @@
 # IMU Preintegration
 
-**Current version:** 1.0.0 
+**Current version:** 0.0.1
 
-IMU Preintegration is a real-time module library. It is able to use for VIO and VI SLAM. We provide two non-linear optimizations libraries for estimating the states. We also provide the examples to run this library and show how to use this IMU Preintegration module library.
+IMU Preintegration is a real-time module library. It is able to use for VIO and VI SLAM. We provide two parameterized method (rotation matrix and quaternion) using two non-linear optimizations libraries for estimating the states. We also provide the examples to run this library and show how to use this IMU Preintegration module library.
 
 This library is not bug-free, and welcome to improve it together!
 
+
+*version*: 0.0.1   
+The version 0.0.1 only provide the API for computing the IMU Preintegration measurments. In next version will provide the g2o library state vertex and error edge for IMU Preintegration. 
 
 ## Related Publications:
 
 * Forster C, Carlone L, Dellaert F, et al. **On-Manifold Preintegration for Real-Time Visual--Inertial Odometry**. IEEE Transactions on Robotics, 2017, 33(1): 1-21. **[PDF](http://rpg.ifi.uzh.ch/docs/TRO16_forster.pdf)**.
 
-* Tong Qin, Peiliang Li, Zhenfei Yang, Shaojie Shen, **VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator**,  IEEE Transactions on Robotics. [PDF](https://ieeexplore.ieee.org/document/8421746/?arnumber=8421746&source=authoralert) 
+* Tong Qin, Peiliang Li, Zhenfei Yang, Shaojie Shen, **VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator**,  IEEE Transactions on Robotics. **[PDF](https://ieeexplore.ieee.org/document/8421746/?arnumber=8421746&source=authoralert)** 
 
 
 ## 1. License
@@ -65,11 +68,7 @@ This will create **libIMU_Preintegration.so**  at *lib* folder and the executabl
 
 2. Execute the following first command for V1 and V2 sequences, or the second command for MH sequences. Change PATH_TO_SEQUENCE_FOLDER and SEQUENCE according to the sequence you want to run.
 ```
-
-```
-
-```
-
+./bin/main PATH_TO_SEQUENCE_FOLDER/imu0/data.csv 
 ```
 
 ## 5. Processing your own sequences
